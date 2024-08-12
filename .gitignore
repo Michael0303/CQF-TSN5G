@@ -1,0 +1,47 @@
+# Ignore OMNeT++ build output
+out/
+build/
+
+# Ignore generated files (like Makefiles)
+Makefile
+Makefile.inc
+Makefile.conf
+
+# Ignore backup and temporary files
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+
+# Ignore binary files
+*.o
+*.so
+*.a
+*.exe
+*.dll
+
+# Ignore log and trace files
+*.log
+*.vec
+*.sca
+
+# Ignore simulation results
+*.csv
+*.pdf
+*.eps
+
+# Ignore core dumps
+core
+
+# Ignore custom configuration files
+*.user
+
+# Ignore Eclipse/OMNeT++ IDE workspace metadata
+.metadata/
+
+# Don't ignore IDE files to ensure the project can be imported successfully
+!.project
+!.cproject
+!.settings/
