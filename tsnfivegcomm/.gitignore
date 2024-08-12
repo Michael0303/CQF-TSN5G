@@ -7,3 +7,4 @@ src/*.lib
 src/Makefile
 .qtenvrc
 results
+.settings/
