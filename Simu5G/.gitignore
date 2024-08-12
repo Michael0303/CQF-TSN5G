@@ -43,7 +43,6 @@ backups
 *.FAILED
 *.UPDATED
 *.ERROR
-.cproject
 .project
 
 # ignore result folders
