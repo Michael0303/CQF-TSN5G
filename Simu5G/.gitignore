@@ -1,3 +1,6 @@
+# Ignore precompiled header files
+*.gch
+
 # ignore generated files
 doc/src/_build
 src/Makefile
@@ -90,8 +93,6 @@ xxx
 *.FAILED
 *.UPDATED
 *.ERROR
-.cproject
-.project
 
 # ignore result folders
 /simulations/gtpNetwork/ResultLteCoreNetwork/
