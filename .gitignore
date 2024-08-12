@@ -2,6 +2,9 @@
 out/
 build/
 
+# Ignore precompiled header files
+*.h.gch
+
 # Ignore generated files (like Makefiles)
 Makefile
 Makefile.inc
