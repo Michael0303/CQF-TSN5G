@@ -1,0 +1,3 @@
+package cqfscheduler;
+
+@license(LGPL);
