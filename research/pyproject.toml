@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "cqftsn5g-scheduling"
+version = "0.1.0"
+description = "scheduling of TSN-5G based on CP-SAT"
+authors = ["Michael0303 <mmm323790@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -47,11 +47,7 @@ class UserTxParams:
             res.append(1)
         else:
             match self.txMode:
-                case (
-                    TxMode.SINGLE_ANTENNA_PORT0
-                    | TxMode.SINGLE_ANTENNA_PORT5
-                    | TxMode.MULTI_USER
-                ):
+                case TxMode.SINGLE_ANTENNA_PORT0 | TxMode.SINGLE_ANTENNA_PORT5 | TxMode.MULTI_USER:
                     res.append(1)
 
                 case TxMode.TRANSMIT_DIVERSITY:

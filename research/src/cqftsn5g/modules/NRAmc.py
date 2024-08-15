@@ -1,7 +1,7 @@
 import math
 from enum import Enum
 import logging
-from research.NRMcs import (
+from modules.NRMcs import (
     N_INFO_TO_TBS,
     TBSTABLESIZE,
     NRMcsTable,
@@ -9,7 +9,7 @@ from research.NRMcs import (
     NRMCSelem,
     LteMod,
 )
-from research.UserTxParams import UserTxParams
+from modules.UserTxParams import UserTxParams
 
 
 class Direction(Enum):
