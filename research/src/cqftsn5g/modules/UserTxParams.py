@@ -69,7 +69,7 @@ class UserTxParams:
                         res.append(4)
                 case _:
                     res.append(1)
-        return self.layers
+        return res
 
     def read_cqi_vector(self) -> list[int]:
         return self.cqiVector

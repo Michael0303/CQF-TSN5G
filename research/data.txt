@@ -1,0 +1,1292 @@
+0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 608
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 76
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 1 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 1, direction DL, blocks 2
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 1
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 2
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 1224
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 2
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1224
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 153 +77
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 2 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 2, direction DL, blocks 3
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 2
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 3
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 1864
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 3
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1864
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 233 +80
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 3 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 3, direction DL, blocks 4
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 3
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 4
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 2472
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 4
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2472
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 309
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 4 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 4, direction DL, blocks 5
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 4
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 5
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 3104
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 5
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 3104
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 388
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 7 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 7, direction DL, blocks 6
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 7
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 6
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 3752
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 6
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 3752
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 469
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 9 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 9, direction DL, blocks 7
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 7
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 4224
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 7
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 4224
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 528
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 10 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 10, direction DL, blocks 8
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 10
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 8
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 4864
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 8
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 4864
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 608
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 11 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 11, direction DL, blocks 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 11
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 5504
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 9
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 5504
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 688
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 12 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 12, direction DL, blocks 10
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 12
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 10
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 6016
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 10
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 6016
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 752
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 13 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 13, direction DL, blocks 11
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 13
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 11
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 6656
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 11
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 6656
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 832
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 15 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 15, direction DL, blocks 12
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 15
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 12
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 7296
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 12
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 7296
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 912
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 16 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 16, direction DL, blocks 13
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 16
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 13
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 7936
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 13
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 7936
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 992
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 18 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 18, direction DL, blocks 14
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 18
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 14
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 8448
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 14
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 8448
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1056
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 19 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 19, direction DL, blocks 15
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 19
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 15
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 9216
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 15
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 9216
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1152
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 20 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 20, direction DL, blocks 16
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 20
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 16
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 9728
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 16
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 9728
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1216
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 21 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 21, direction DL, blocks 17
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 21
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 17
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 10240
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 17
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 10240
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1280
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 22 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 22, direction DL, blocks 18
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 22
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 18
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 11008
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 18
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 11008
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1376
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 23 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 23, direction DL, blocks 19
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 23
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 19
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 11520
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 19
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 11520
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1440
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 24 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 24, direction DL, blocks 20
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 24
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 20
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 12032
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 20
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 12032
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1504
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 25 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 25, direction DL, blocks 21
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 25
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 21
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 12800
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 21
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 12800
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1600
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 26 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 26, direction DL, blocks 22
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 26
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 22
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 13312
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 22
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 13312
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1664
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 27 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 27, direction DL, blocks 23
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 27
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 23
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 14080
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 23
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 14080
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1760
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 28 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 28, direction DL, blocks 24
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 28
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 24
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 14592
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 24
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 14592
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1824
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 29 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 29, direction DL, blocks 25
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 29
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 25
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 15104
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 25
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 15104
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1888
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 30 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 30, direction DL, blocks 26
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 30
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 26
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 15872
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 26
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 15872
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 1984
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 31 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 31, direction DL, blocks 27
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 31
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 27
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 16384
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 27
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 16384
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2048
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 32 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 32, direction DL, blocks 28
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 32
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 28
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 16888
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 28
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 16888
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2111
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 33 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 33, direction DL, blocks 29
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 33
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 29
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 17400
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 29
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 17400
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2175
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 34 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 34, direction DL, blocks 30
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 34
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 30
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 18424
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 30
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 18424
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2303
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 35 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 35, direction DL, blocks 31
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 35
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 31
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 18936
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 31
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 18936
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2367
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 38 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 38, direction DL, blocks 32
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 38
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 32
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 19448
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 32
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 19448
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2431
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 40 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 40, direction DL, blocks 33
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 40
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 33
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 19960
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 33
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 19960
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2495
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 41 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 41, direction DL, blocks 34
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 41
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 34
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 20472
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 34
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 20472
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2559 +
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 42 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 42, direction DL, blocks 35
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 42
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 35
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 21496
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 35
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 21496
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2687 +64
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 44 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 44, direction DL, blocks 36
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 44
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 36
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 22008
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 36
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 22008
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2751 +64
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 45 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 45, direction DL, blocks 37
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 45
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 37
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 22520
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 37
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 22520
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2815
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 46 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 46, direction DL, blocks 38
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 46
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 38
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 23032
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 38
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 23032
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2879 +64
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 47 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 47, direction DL, blocks 39
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 47
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 39
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 23544
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 39
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 23544
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 2943
+INFO: 0.0035 LteAllocator::availableBlocks DL - Band 48 has 1 blocks available [total 1, allocated 0]
+INFO: 0.0035 LteAmc::blocks2bytes Node 2049, Band 48, direction DL, blocks 40
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Band: 48
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.0035 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.0035 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Resource Blocks: 40
+INFO: 0.0035 NRAmc::computeBitsOnNRbs Available space: 24568
+INFO: 0.0035 LteAmc::blocks2bytes Resource Blocks: 40
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 24568
+INFO: 0.0035 LteAmc::blocks2bytes Available space: 3071
+INFO: 0.0035 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.0035 LteAmc::computeTxParams CellId: 1
+INFO: 0.0035 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.0035 LteAmc::computeTxParams Direction: DL
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.0035 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.0035 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.0035 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+
+
+
+INFO: LteSchedulerEnb::grant - deciding allowed Bands
+INFO: 	0 yes
+INFO: 	1 yes
+INFO: 	2 yes
+INFO: 	3 yes
+INFO: 	4 yes
+INFO: 	5 no
+INFO: 	6 no
+INFO: 	7 yes
+INFO: 	8 no
+INFO: 	9 yes
+INFO: 	10 yes
+INFO: 	11 yes
+INFO: 	12 yes
+INFO: 	13 yes
+INFO: 	14 no
+INFO: 	15 yes
+INFO: 	16 yes
+INFO: 	17 no
+INFO: 	18 yes
+INFO: 	19 yes
+INFO: 	20 yes
+INFO: 	21 yes
+INFO: 	22 yes
+INFO: 	23 yes
+INFO: 	24 yes
+INFO: 	25 yes
+INFO: 	26 yes
+INFO: 	27 yes
+INFO: 	28 yes
+INFO: 	29 yes
+INFO: 	30 yes
+INFO: 	31 yes
+INFO: 	32 yes
+INFO: 	33 yes
+INFO: 	34 yes
+INFO: 	35 yes
+INFO: 	36 no
+INFO: 	37 no
+INFO: 	38 yes
+INFO: 	39 no
+INFO: 	40 yes
+INFO: 	41 yes
+INFO: 	42 yes
+INFO: 	43 no
+INFO: 	44 yes
+INFO: 	45 yes
+INFO: 	46 yes
+INFO: 	47 yes
+INFO: 	48 yes
+INFO: 	49 no
+INFO: LteSchedulerEnb::grant(134283265,4294967295,0,1,1,BAND_LIMIT_SPECIFIED,MACRO)
+INFO: LteSchedulerEnb::grant --------------------::[ START GRANT ]::--------------------
+INFO: LteSchedulerEnb::grant Cell: 1
+INFO: LteSchedulerEnb::grant CID: 134283265(UE: 2049, Flow: 1) current Antenna [MACRO]
+INFO: 0.004 LteAllocationModule::computeTotalRbs DL - total 50, allocated 0, 50 blocks available
+INFO: LteSchedulerEnb::grant TxMode: TRANSMIT_DIVERSITY
+INFO: LteSchedulerEnb::grant Available codewords: 1
+INFO: LteSchedulerEnb::grant @@@@@ CODEWORD 0 @@@@@
+INFO: LteSchedulerEnb::scheduleGrant bytes to be allocated: 662
+INFO: LteSchedulerEnb::grant --- BAND 0 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 0 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 0 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 0, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 0 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 0, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 0 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 0 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 1 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 1 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 1 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 1, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 1 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 1, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 1 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 1 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 2 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 2 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 2 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 2, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 2
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 2 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 2, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 2 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 2 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 3 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 3 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 3 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 3, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 3
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 3 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 3, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 3 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 3 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 4 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 4 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 4 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 4, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 4
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 4 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 4, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 4 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 4 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 5 LIMIT -2---
+INFO: LteSchedulerEnb::grant skipping logical band according to limit value
+INFO: LteSchedulerEnb::grant --- BAND 6 LIMIT -2---
+INFO: LteSchedulerEnb::grant skipping logical band according to limit value
+INFO: LteSchedulerEnb::grant --- BAND 7 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 7 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 7 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 7, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 7
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 7 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 7, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 7 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 7 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 8 LIMIT -2---
+INFO: LteSchedulerEnb::grant skipping logical band according to limit value
+INFO: LteSchedulerEnb::grant --- BAND 9 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 9 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 9 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 9, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 9 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 9, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 9 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 9 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 10 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 10 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 10 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 10, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 10
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 10 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 10, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 10 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 10 satisfied
+INFO: LteSchedulerEnb::grant --- BAND 11 LIMIT -1---
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 Antenna MACRO band 11 cw 0
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 11 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAmc::blocks2bytes Node 2049, Band 11, Codeword 0,  direction DL, blocks 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Node: 2049
+INFO: 0.004 NRAmc::computeBitsOnNRbs Band: 11
+INFO: 0.004 NRAmc::computeBitsOnNRbs Codeword: 0
+INFO: 0.004 NRAmc::computeBitsOnNRbs Direction: DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeBitsOnNRbs Resource Blocks: 1
+INFO: 0.004 NRAmc::computeBitsOnNRbs Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Resource Blocks: 1
+INFO: 0.004 LteAmc::blocks2bytes Available space: 608
+INFO: 0.004 LteAmc::blocks2bytes Available space: 76
+INFO: LteSchedulerEnb::availableBytes MacNodeId 2049 blocks [1], bytes [76]
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 11 has 1 blocks available [total 1, allocated 0]
+INFO: LteSchedulerEnb::grant Available Bytes: 76 available blocks 1
+INFO: 0.004 NRAmc::computeReqRbs Node 2049, Band 11, Codeword 0, direction DL
+INFO: 0.004 LteAmc::computeTxParams --------------::[ START ]::--------------
+INFO: 0.004 LteAmc::computeTxParams CellId: 1
+INFO: 0.004 LteAmc::computeTxParams NodeId: 2049
+INFO: 0.004 LteAmc::computeTxParams Direction: DL
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 LteAmc::computeTxParams RB allocation type: localized
+INFO: 0.004 LteAmc::computeTxParams - - - - - - - - - - - - - - - - - - - - -
+INFO: 0.004 AmcPilotAuto::computeTxParams for UE 2049, direction DL
+INFO: 0.004 AmcPilotAuto::computeTxParams The Information for this user have been already assigned
+INFO: 0.004 LteAmc::computeTxParams --------------::[  END  ]::--------------
+INFO: 0.004 NRAmc::computeCodewordTbs CQI: 9
+INFO: 0.004 NRAmc::computeReqRbs Occupation: 76 bytes , CQI : 9
+INFO: 0.004 NRAmc::computeReqRbs Number of RBs: 1
+INFO: 0.004 LteAllocator::availableBlocks DL - Band 11 has 1 blocks available [total 1, allocated 0]
+INFO: 0.004 LteAllocator::addBlocks DL - Node 2049, the request of 1 blocks on band 11 satisfied
+INFO: LteSchedulerEnb::grant - the first SDU/BSR is served entirely, remove it from the virtual buffer, remaining bytes to serve[351]
+INFO: LteSchedulerEnb::grant - the first SDU/BSR is served entirely, remove it from the virtual buffer, remaining bytes to serve[22]

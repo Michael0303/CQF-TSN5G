@@ -130,8 +130,8 @@ N_INFO_TO_TBS = [
 class NRMcsTable:
     def __init__(self, extended=True):
         self.extended = extended
-        self.cqi_table = []
-        self.table = []
+        self.cqiTable = []
+        self.mcsTable = []
         if not self.extended:
             self.cqiTable = [
                 CQIelem(LteMod._QPSK, 0.0),
@@ -151,7 +151,7 @@ class NRMcsTable:
                 CQIelem(LteMod._64QAM, 873.0),
                 CQIelem(LteMod._64QAM, 948.0),
             ]
-            self.table = [
+            self.mcsTable = [
                 NRMCSelem(LteMod._QPSK, 120.0),
                 NRMCSelem(LteMod._QPSK, 157.0),
                 NRMCSelem(LteMod._QPSK, 193.0),
@@ -201,7 +201,7 @@ class NRMcsTable:
                 CQIelem(LteMod._256QAM, 885.0),
                 CQIelem(LteMod._256QAM, 948.0),
             ]
-            self.table = [
+            self.mcsTable = [
                 NRMCSelem(LteMod._QPSK, 120.0),
                 NRMCSelem(LteMod._QPSK, 193.0),
                 NRMCSelem(LteMod._QPSK, 308.0),
@@ -233,51 +233,52 @@ class NRMcsTable:
             ]
 
     def get_cqi_elem(self, i):
-        return self.cqi_table[i]
+        print(f"CQI table index: {i}")
+        return self.cqiTable[i]
 
     def get_min_index(self, mod):
         if not self.extended:
-            if mod == "_QPSK":
+            if mod == LteMod._QPSK:
                 return 0
-            elif mod == "_16QAM":
+            elif mod == LteMod._16QAM:
                 return 10
-            elif mod == "_64QAM":
+            elif mod == LteMod._64QAM:
                 return 17
             else:
                 raise ValueError("Modulation not supported")
         else:
-            if mod == "_QPSK":
+            if mod == LteMod._QPSK:
                 return 0
-            elif mod == "_16QAM":
+            elif mod == LteMod._16QAM:
                 return 5
-            elif mod == "_64QAM":
+            elif mod == LteMod._64QAM:
                 return 11
-            elif mod == "_256QAM":
+            elif mod == LteMod._256QAM:
                 return 20
             else:
                 raise ValueError("Modulation not supported")
 
     def get_max_index(self, mod):
         if not self.extended:
-            if mod == "_QPSK":
+            if mod == LteMod._QPSK:
                 return 9
-            elif mod == "_16QAM":
+            elif mod == LteMod._16QAM:
                 return 16
-            elif mod == "_64QAM":
+            elif mod == LteMod._64QAM:
                 return 28
             else:
                 raise ValueError("Modulation not supported")
         else:
-            if mod == "_QPSK":
+            if mod == LteMod._QPSK:
                 return 4
-            elif mod == "_16QAM":
+            elif mod == LteMod._16QAM:
                 return 10
-            elif mod == "_64QAM":
+            elif mod == LteMod._64QAM:
                 return 19
-            elif mod == "_256QAM":
+            elif mod == LteMod._256QAM:
                 return 27
             else:
                 raise ValueError("Modulation not supported")
 
     def at(self, tbs):
-        return self.table[tbs]
+        return self.mcsTable[tbs]

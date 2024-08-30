@@ -1,11 +1,12 @@
 [tool.poetry]
-name = "cqftsn5g-scheduling"
+name = "cqftsn5g"
 version = "0.1.0"
 description = "scheduling of TSN-5G based on CP-SAT"
 authors = ["Michael0303 <mmm323790@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+ortools = "^9.10.4067"
 
 
 [build-system]

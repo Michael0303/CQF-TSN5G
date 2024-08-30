@@ -1,24 +1,97 @@
-f_TT = (T_i, S_i, P_i, CQI_i, D_i, J_i, \rho_i)
-f_AVB = (T_i, S_i, P_i, CQI_i, D_i, R_i, \rho_i)
+from cqftsn5g.modules.Models import Node, Link, Flow, Path
 
-TT_flows = [{"period": 2.5, "payload": 256, "latency": 2, "jitter": 0.5}]
-AVB_flows = [{"period": 10, "payload": 1024, "latency": 10, "bandwidth(Mbps)": 1}]
+# Nodes
+host1 = Node("TSN host 1", True)
+host2 = Node("TSN host 2", True)
+tsn_sw1 = Node("TSN switch 1", False)
+dstt = Node("DS-TT", False)
+ue1 = Node("UE 1", False)
+gnb = Node("gNodeB", False)
+upf_nwtt = Node("UPF NW-TT", False)
+tsn_sw2 = Node("TSN switch 2", False)
+host3 = Node("TSN host 3", True)
 
-Path_1 = {
-    'src': 'E1',
-    'links': ['E1-TSNSW1', 'TSNSW1-DSTT', 'DSTT-UE', 'UE-GNB', 'GNB-TSNSW2', 'TSNSW2-E2'],
-    'dst': 'E2'
-}
+# Links
+host1_tsn_sw1 = Link(host1, tsn_sw1, 1000, "wire")
+host2_tsn_sw1 = Link(host2, tsn_sw1, 1000, "wire")
+tsn_sw1_dstt = Link(tsn_sw1, dstt, 1000, "wire")
+dstt_ue1 = Link(dstt, ue1, 1000, "wire")
+ue1_gnb = Link(ue1, gnb, 1000, "wireless")
+gnb_upf_nwtt = Link(gnb, upf_nwtt, 1000, "wire")
+upf_nwtt_tsn_sw2 = Link(upf_nwtt, tsn_sw2, 1000, "wire")
+tsn_sw2_host3 = Link(tsn_sw2, host3, 1000, "wire")
 
-period(ms): 0.5, 1, 2, 2.5, 4, 5, 8, 10, 16 / 4, 8
-payload(bytes): 50, 100, 125, 200, 250, 50~1000 / 800, 1000, 1200, 1500
-Hyper_cycle: 10 ms
-time_interval: 0.125, 0.5, 4 ms 0.0005
-Latency: (0.5, 1)(=period), 6 / 1.6~8(=0.4x~1x period), 20 ms
-Jitter: 0-1 microsecond, 0.5 ms
-DataRate: 80000 bytes/sec = 640Kb/s, 1000~2000 Kb/s
-50 TT
-140 ~ 200 AVB
+# Paths
+path1 = Path(
+    src=host1,
+    dst=host3,
+    links=[
+        host1_tsn_sw1,
+        tsn_sw1_dstt,
+        dstt_ue1,
+        ue1_gnb,
+        gnb_upf_nwtt,
+        upf_nwtt_tsn_sw2,
+        tsn_sw2_host3,
+    ],
+)
+path2 = Path(
+    src=host2,
+    dst=host3,
+    links=[
+        host2_tsn_sw1,
+        tsn_sw1_dstt,
+        dstt_ue1,
+        ue1_gnb,
+        gnb_upf_nwtt,
+        upf_nwtt_tsn_sw2,
+        tsn_sw2_host3,
+    ],
+)
+
+# Flows
+tt_flow1 = Flow(
+    period=4,  # 2, 4
+    payload=256,  # 50 ~ 1000
+    priority=5,
+    latency=4,  # 1, 2, 4
+    CQI=13,
+    jitter=0.5,
+    bandwidth=0,
+    flowType="TT",
+    path=path1,
+)
+avb_flow1 = Flow(
+    period=10,  # 4, 8
+    payload=1024,
+    priority=3,
+    latency=10,
+    CQI=13,
+    jitter=10,
+    bandwidth=1,
+    flowType="AVB",
+    path=path2,
+)
+
+
+# period(ms): 0.5, 1, 2, 2.5, 4, 5, 8, 10, 16 / 4, 8
+# payload(bytes): 50, 100, 125, 200, 250, 50~1000 / 800, 1000, 1200, 1500
+# Hyper_cycle: 10 ms
+# time_interval: 0.125, 0.5, 4 ms 0.0005
+# Latency: (0.5, 1)(=period), 6 / 1.6~8(=0.4x~1x period), 20 ms
+# Jitter: 0-1 microsecond, 0.5 ms
+# DataRate: 80000 bytes/sec = 640Kb/s, 1000~2000 Kb/s
+# 50 TT
+# 140 ~ 200 AVB
+
+# mu = 3 => TTI = 0.125 = 125 mus
+# mu = 2 => TTI = 0.5 = 500 mus
+
+# mu = 4 => TTI = 0.0625=  62.5 mus
+# T_c = 0.5 ms => 8 TTI
+# H_c = 8 ms
+# N = 16
+
 
 def flow_template():
     flow_features = [

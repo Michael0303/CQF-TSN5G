@@ -1,14 +1,8 @@
 import math
 from enum import Enum
 import logging
-from modules.NRMcs import (
-    N_INFO_TO_TBS,
-    TBSTABLESIZE,
-    NRMcsTable,
-    CQIelem,
-    NRMCSelem,
-    LteMod,
-)
+from modules.NRMcs import N_INFO_TO_TBS, TBSTABLESIZE, NRMcsTable, CQIelem, NRMCSelem, LteMod
+
 from modules.UserTxParams import UserTxParams
 
 
@@ -29,17 +23,20 @@ def get_mcs_elem_per_cqi(cqi: int, dir: Direction) -> NRMCSelem:
     #     raise ValueError("Unrecognized direction")
     mcs_table = NRMcsTable()
 
+    logging.debug(f"search for CQI: {cqi}")
     entry: CQIelem = mcs_table.get_cqi_elem(cqi)
     mod = entry.mod
     rate = entry.rate
+    logging.debug(f"mod: {mod}, rate: {rate}")
     min_index = mcs_table.get_min_index(mod)
     max_index = mcs_table.get_max_index(mod)
-
+    logging.debug(f"min_index: {min_index}, max_index: {max_index}")
     ret = mcs_table.at(min_index)
     for i in range(min_index, max_index + 1):
         elem: NRMCSelem = mcs_table.at(i)
         if elem.coderate <= rate:
-            return elem
+            logging.debug(f"found MCS elem: {i}, coderate: {elem.coderate}")
+            ret = elem
         else:
             break
 
@@ -47,7 +44,7 @@ def get_mcs_elem_per_cqi(cqi: int, dir: Direction) -> NRMCSelem:
 
 
 class SlotFormat:
-    def __init__(self, tdd, numDlSymbols, numUlSymbols, numFlexSymbols):
+    def __init__(self, tdd: bool, numDlSymbols: int, numUlSymbols: int, numFlexSymbols: int):
         self.tdd = tdd
         self.numDlSymbols = numDlSymbols
         self.numUlSymbols = numUlSymbols
@@ -63,10 +60,10 @@ class BandLimit:
 class CarrierInfo:
     def __init__(
         self,
-        carrierFrequency,
-        numBands,
-        firstBand,
-        lastBand,
+        carrierFrequency: float,
+        numBands: int,
+        firstBand: int,
+        lastBand: int,
         bandLimit: list[BandLimit],
         numerologyIndex: int,
         slotFormat: SlotFormat,
@@ -83,7 +80,7 @@ class CarrierInfo:
         return self.slotFormat
 
 
-def get_symbols_per_slot(carrierFrequency: float, dir: Direction, sf: SlotFormat):
+def get_symbols_per_slot(dir: Direction, sf: SlotFormat):
     totSymbols = 14
     if not sf.tdd:
         return totSymbols
@@ -95,6 +92,18 @@ def get_symbols_per_slot(carrierFrequency: float, dir: Direction, sf: SlotFormat
 
 
 def compute_codeword_tbs(info: UserTxParams, cw: int, dir: Direction, numRe: int):
+    """
+    Computes the codeword Transport Block Size (TBS) based on the given UserTxParams, codeword index, direction, and number of resource elements.
+
+    Parameters:
+    info (UserTxParams): The user transmission parameters.
+    cw (int): The codeword index.
+    dir (Direction): The transmission direction.
+    numRe (int): The number of resource elements.
+
+    Returns:
+    int: The computed codeword TBS.
+    """
     layers = info.get_layers()
     mcsElem = get_mcs_elem_per_cqi(info.read_cqi_vector()[cw], dir)
 
@@ -112,10 +121,25 @@ def compute_codeword_tbs(info: UserTxParams, cw: int, dir: Direction, numRe: int
 
     coderate = mcsElem.coderate / 1024
     nInfo = numRe * coderate * modFactor * layers[cw]
+    logging.debug(f"number of resource elements: {numRe}")
+    logging.debug(f"coderate: {coderate}")
+    logging.debug(f"modFactor: {modFactor}")
+    logging.debug(f"layers len: {layers[cw]}")
+    logging.debug(f"calculated nInfo: {nInfo}")
     return compute_tbs_from_ninfo(math.floor(nInfo), coderate)
 
 
 def compute_tbs_from_ninfo(nInfo, coderate) -> int:
+    """
+    Computes the Transport Block Size (TBS) based on the given information and coderate.
+
+    Parameters:
+    nInfo (int): The information value used to compute the TBS.
+    coderate (float): The coderate value used to compute the TBS.
+
+    Returns:
+    int: The computed Transport Block Size.
+    """
     tbs = 0
     _nInfo = 0
     n = 0
@@ -131,11 +155,11 @@ def compute_tbs_from_ninfo(nInfo, coderate) -> int:
             (N_INFO_TO_TBS[j] for j in range(TBSTABLESIZE - 1) if N_INFO_TO_TBS[j] >= _nInfo),
             0,
         )
-        j = 0
-        for j in range(0, TBSTABLESIZE - 1):
-            if N_INFO_TO_TBS[j] >= _nInfo:
-                break
-        tbs = N_INFO_TO_TBS[j]
+        # j = 0
+        # for j in range(0, TBSTABLESIZE - 1):
+        #     if N_INFO_TO_TBS[j] >= _nInfo:
+        #         break
+        # tbs = N_INFO_TO_TBS[j]
     else:
         n = math.floor(math.log2(nInfo - 24) - 5)
         _nInfo = (1 << n) * round((nInfo - 24) / (1 << n))
@@ -170,13 +194,12 @@ def get_resource_elements(blocks, symbolsPerSlot):
     return blocks * symbolsPerSlot
 
 
-def computeReqRbs(
+def compute_req_rbs(
     id,
     band,
     cw,
     bytes,
     dir,
-    carrierFrequency,
     info: UserTxParams,
     carrierInfo: CarrierInfo,
 ):
@@ -191,7 +214,7 @@ def computeReqRbs(
 
     bits = bytes * 8
     sf: SlotFormat = carrierInfo.get_slot_format()
-    numRe = get_resource_elements(1, get_symbols_per_slot(carrierFrequency, dir, sf))
+    numRe = get_resource_elements(1, get_symbols_per_slot(dir, sf))
     j = 0
     while j < 110:
         if compute_codeword_tbs(info, cw, dir, numRe) >= bits:
@@ -199,7 +222,7 @@ def computeReqRbs(
         j += 1
 
     logging.debug(
-        f"NRAmc::computeReqRbs Occupation: {bytes} bytes, CQI: {info.readCqiVector().at(cw)}"
+        f"NRAmc::computeReqRbs Occupation: {bytes} bytes, CQI: {info.read_cqi_vector().at(cw)}"
     )
     logging.debug(f"NRAmc::computeReqRbs Number of RBs: {j + 1}")
 
@@ -209,28 +232,26 @@ def computeReqRbs(
 def compute_bits_on_n_rbs(
     id: int,
     band: int,
-    cw: int,
     blocks: int,
     dir: Direction,
-    carrierFrequency: float,
     info: UserTxParams,
     carrierInfo: CarrierInfo,
 ):
     if blocks == 0:
         return 0
 
-    logging.info(f"NRAmc::computeBitsOnNRbs Node: {id}")
-    logging.info(f"NRAmc::computeBitsOnNRbs Band: {band}")
-    logging.info(f"NRAmc::computeBitsOnNRbs Direction: {dir}")
+    logging.debug(f"NRAmc::computeBitsOnNRbs Node: {id}")
+    logging.debug(f"NRAmc::computeBitsOnNRbs Band: {band}")
+    logging.debug(f"NRAmc::computeBitsOnNRbs Direction: {dir}")
 
     sf: SlotFormat = carrierInfo.get_slot_format()
-    numRe = get_resource_elements(blocks, get_symbols_per_slot(carrierFrequency, dir, sf))
+    numRe = get_resource_elements(blocks, get_symbols_per_slot(dir, sf))
 
     bits = 0
     codewords = len(info.get_layers())
     for cw in range(codewords):
         if info.read_cqi_vector()[cw] == 0:
-            logging.info(
+            logging.debug(
                 f"NRAmc::computeBitsOnNRbs - CQI equal to zero on cw {cw}, return no blocks available"
             )
         tbs = compute_codeword_tbs(info, cw, dir, numRe)
