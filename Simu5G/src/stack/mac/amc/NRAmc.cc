@@ -19,17 +19,14 @@ using namespace omnetpp;
  ********************/
 
 NRAmc::NRAmc(LteMacEnb *mac, Binder *binder, CellInfo *cellInfo, int numAntennas)
-           : LteAmc(mac, binder, cellInfo, numAntennas)
-{
+    : LteAmc(mac, binder, cellInfo, numAntennas) {
 }
 
-NRAmc::~NRAmc()
-{
+NRAmc::~NRAmc() {
 }
 
-unsigned int NRAmc::getSymbolsPerSlot(double carrierFrequency, Direction dir)
-{
-    unsigned totSymbols = 14;   // TODO get this parameter from CellInfo/Carrier
+unsigned int NRAmc::getSymbolsPerSlot(double carrierFrequency, Direction dir) {
+    unsigned totSymbols = 14;  // TODO get this parameter from CellInfo/Carrier
 
     // use a function from the binder
     SlotFormat sf = binder_->getSlotFormat(carrierFrequency);
@@ -43,9 +40,8 @@ unsigned int NRAmc::getSymbolsPerSlot(double carrierFrequency, Direction dir)
     return sf.numUlSymbols;
 }
 
-unsigned int NRAmc::getResourceElementsPerBlock(unsigned int symbolsPerSlot)
-{
-    unsigned int numSubcarriers = 12;   // TODO get this parameter from CellInfo/Carrier
+unsigned int NRAmc::getResourceElementsPerBlock(unsigned int symbolsPerSlot) {
+    unsigned int numSubcarriers = 12;  // TODO get this parameter from CellInfo/Carrier
     unsigned int reSignal = 1;
     unsigned int nOverhead = 0;
 
@@ -54,8 +50,7 @@ unsigned int NRAmc::getResourceElementsPerBlock(unsigned int symbolsPerSlot)
     return (numSubcarriers * symbolsPerSlot) - reSignal - nOverhead;
 }
 
-unsigned int NRAmc::getResourceElements(unsigned int blocks, unsigned int symbolsPerSlot)
-{
+unsigned int NRAmc::getResourceElements(unsigned int blocks, unsigned int symbolsPerSlot) {
     unsigned int numRePerBlock = getResourceElementsPerBlock(symbolsPerSlot);
 
     if (numRePerBlock > 156)
@@ -64,85 +59,81 @@ unsigned int NRAmc::getResourceElements(unsigned int blocks, unsigned int symbol
     return numRePerBlock * blocks;
 }
 
-unsigned int NRAmc::computeTbsFromNinfo(double nInfo, double coderate)
-{
+unsigned int NRAmc::computeTbsFromNinfo(double nInfo, double coderate) {
     unsigned int tbs = 0;
     unsigned int _nInfo = 0;
     unsigned int n = 0;
     if (nInfo == 0)
         return 0;
 
-    if (nInfo <= 3824)
-    {
+    if (nInfo <= 3824) {
         n = std::max((int)3, (int)(floor(log2(nInfo) - 6)));
-        _nInfo = std::max((unsigned int)24, (unsigned int)((1 << n) * floor(nInfo/(1<<n))) );
+        _nInfo = std::max((unsigned int)24, (unsigned int)((1 << n) * floor(nInfo / (1 << n))));
 
         // get tbs from table
         unsigned int j = 0;
-        for (j = 0; j < TBSTABLESIZE-1; j++)
-        {
-            if (nInfoToTbs[j] >= _nInfo )
+        for (j = 0; j < TBSTABLESIZE - 1; j++) {
+            if (nInfoToTbs[j] >= _nInfo)
                 break;
         }
 
         tbs = nInfoToTbs[j];
-    }
-    else
-    {
+    } else {
         unsigned int C;
-        n = floor( log2(nInfo - 24) - 5);
-        _nInfo = ( 1 << n ) * round( (nInfo - 24) / (1 << n));
-        if (coderate <= 0.25 )
-        {
-            C = ceil( (_nInfo+24) / 3816 );
-            tbs = 8 * C * ceil( (_nInfo+24) / (8*C) ) - 24;
-        }
-        else
-        {
-            if (_nInfo >= 8424)
-            {
-                C = ceil( (_nInfo+24) / 8424 );
-                tbs = 8 * C * ceil( (_nInfo+24) / (8*C) ) - 24;
-            }
-            else
-            {
-                tbs = 8 * ceil( (_nInfo+24) / 8 ) - 24;
+        n = floor(log2(nInfo - 24) - 5);
+        _nInfo = (1 << n) * round((nInfo - 24) / (1 << n));
+        if (coderate <= 0.25) {
+            C = ceil((_nInfo + 24) / 3816);
+            tbs = 8 * C * ceil((_nInfo + 24) / (8 * C)) - 24;
+        } else {
+            if (_nInfo >= 8424) {
+                C = ceil((_nInfo + 24) / 8424);
+                tbs = 8 * C * ceil((_nInfo + 24) / (8 * C)) - 24;
+            } else {
+                tbs = 8 * ceil((_nInfo + 24) / 8) - 24;
             }
         }
     }
     return tbs;
 }
 
-unsigned int NRAmc::computeCodewordTbs(UserTxParams* info, Codeword cw, Direction dir, unsigned int numRe)
-{
+unsigned int NRAmc::computeCodewordTbs(UserTxParams *info, Codeword cw, Direction dir, unsigned int numRe) {
     std::vector<unsigned char> layers = info->getLayers();
     NRMCSelem mcsElem = getMcsElemPerCqi(info->readCqiVector().at(cw), dir);
+
+    EV << NOW << " NRAmc::computeCodewordTbs CQI: " << info->readCqiVector().at(cw) << endl;
+
     unsigned int modFactor;
-    switch(mcsElem.mod_)
-    {
-        case _QPSK:   modFactor = 2; break;
-        case _16QAM:  modFactor = 4; break;
-        case _64QAM:  modFactor = 6; break;
-        case _256QAM: modFactor = 8; break;
-        default: throw cRuntimeError("NRAmc::computeCodewordTbs - unrecognized modulation.");
+    switch (mcsElem.mod_) {
+        case _QPSK:
+            modFactor = 2;
+            break;
+        case _16QAM:
+            modFactor = 4;
+            break;
+        case _64QAM:
+            modFactor = 6;
+            break;
+        case _256QAM:
+            modFactor = 8;
+            break;
+        default:
+            throw cRuntimeError("NRAmc::computeCodewordTbs - unrecognized modulation.");
     }
     double coderate = mcsElem.coderate_ / 1024;
     double nInfo = numRe * coderate * modFactor * layers.at(cw);
 
-    return computeTbsFromNinfo(floor(nInfo),coderate);
+    return computeTbsFromNinfo(floor(nInfo), coderate);
 }
-
 
 /*******************************************
  *      Scheduler interface functions      *
  *******************************************/
 
-unsigned int NRAmc::computeReqRbs(MacNodeId id, Band b, Codeword cw, unsigned int bytes, const Direction dir, double carrierFrequency)
-{
+unsigned int NRAmc::computeReqRbs(MacNodeId id, Band b, Codeword cw, unsigned int bytes, const Direction dir, double carrierFrequency) {
     EV << NOW << " NRAmc::computeReqRbs Node " << id << ", Band " << b << ", Codeword " << cw << ", direction " << dirToA(dir) << endl;
 
-    if(bytes == 0)
-    {
+    if (bytes == 0) {
         // DEBUG
         EV << NOW << " NRAmc::computeReqRbs Occupation: 0 bytes\n";
         EV << NOW << " NRAmc::computeReqRbs Number of RBs: 0\n";
@@ -151,26 +142,25 @@ unsigned int NRAmc::computeReqRbs(MacNodeId id, Band b, Codeword cw, unsigned in
     }
 
     // Acquiring current user scheduling information
-    UserTxParams info = computeTxParams(id, dir,carrierFrequency);
+    UserTxParams info = computeTxParams(id, dir, carrierFrequency);
 
     unsigned int bits = bytes * 8;
     unsigned int numRe = getResourceElements(1, getSymbolsPerSlot(carrierFrequency, dir));
 
-     // Computing RB occupation
+    // Computing RB occupation
     unsigned int j = 0;
-    for(j = 0; j < 110; ++j)   // TODO check number of blocks
-        if(computeCodewordTbs(&info, cw, dir, numRe) >= bits)
+    for (j = 0; j < 110; ++j)  // TODO check number of blocks
+        if (computeCodewordTbs(&info, cw, dir, numRe) >= bits)
             break;
 
     // DEBUG
     EV << NOW << " NRAmc::computeReqRbs Occupation: " << bytes << " bytes , CQI : " << info.readCqiVector().at(cw) << " \n";
-    EV << NOW << " NRAmc::computeReqRbs Number of RBs: " << j+1 << "\n";
+    EV << NOW << " NRAmc::computeReqRbs Number of RBs: " << j + 1 << "\n";
 
-    return j+1;
+    return j + 1;
 }
 
-unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, unsigned int blocks, const Direction dir, double carrierFrequency)
-{
+unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, unsigned int blocks, const Direction dir, double carrierFrequency) {
     if (blocks == 0)
         return 0;
 
@@ -180,22 +170,23 @@ unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, unsigned int blocks,
     EV << NOW << " NRAmc::computeBitsOnNRbs Direction: " << dirToA(dir) << "\n";
 
     unsigned int numRe = getResourceElements(blocks, getSymbolsPerSlot(carrierFrequency, dir));
+    EV << NOW << " NRAmc::computeBitsOnNRbs Resource blocks / elements: " << blocks << " / " << numRe << "\n";
 
     // Acquiring current user scheduling information
-    UserTxParams info = computeTxParams(id, dir,carrierFrequency);
+    UserTxParams info = computeTxParams(id, dir, carrierFrequency);
 
     unsigned int bits = 0;
     unsigned int codewords = info.getLayers().size();
-    for (Codeword cw = 0; cw < codewords; ++cw)
-    {
+    for (Codeword cw = 0; cw < codewords; ++cw) {
         // if CQI == 0 the UE is out of range, thus bits=0
-        if (info.readCqiVector().at(cw) == 0)
-        {
+        if (info.readCqiVector().at(cw) == 0) {
             EV << NOW << " NRAmc::computeBitsOnNRbs - CQI equal to zero on cw " << cw << ", return no blocks available" << endl;
             continue;
         }
 
         unsigned int tbs = computeCodewordTbs(&info, cw, dir, numRe);
+        EV << NOW << " NRAmc::computeBitsOnNRbs TBS on cw " << cw << ": " << tbs << "\n";
+
         bits += tbs;
     }
 
@@ -206,8 +197,7 @@ unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, unsigned int blocks,
     return bits;
 }
 
-unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, Codeword cw, unsigned int blocks, const Direction dir, double carrierFrequency)
-{
+unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, Codeword cw, unsigned int blocks, const Direction dir, double carrierFrequency) {
     if (blocks == 0)
         return 0;
 
@@ -220,11 +210,10 @@ unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, Codeword cw, unsigne
     unsigned int numRe = getResourceElements(blocks, getSymbolsPerSlot(carrierFrequency, dir));
 
     // Acquiring current user scheduling information
-    UserTxParams info = computeTxParams(id, dir,carrierFrequency);
+    UserTxParams info = computeTxParams(id, dir, carrierFrequency);
 
     // if CQI == 0 the UE is out of range, thus return 0
-    if (info.readCqiVector().at(cw) == 0)
-    {
+    if (info.readCqiVector().at(cw) == 0) {
         EV << NOW << " NRAmc::computeBitsOnNRbs - CQI equal to zero, return no blocks available" << endl;
         return 0;
     }
@@ -238,14 +227,12 @@ unsigned int NRAmc::computeBitsOnNRbs(MacNodeId id, Band b, Codeword cw, unsigne
     return tbs;
 }
 
-unsigned int NRAmc::computeBitsPerRbBackground(Cqi cqi, const Direction dir, double carrierFrequency)
-{
+unsigned int NRAmc::computeBitsPerRbBackground(Cqi cqi, const Direction dir, double carrierFrequency) {
     // DEBUG
     EV << NOW << " NRAmc::computeBitsPerRbBackground CQI: " << cqi << " Direction: " << dirToA(dir) << " carrierFrequency: " << carrierFrequency << endl;
 
     // if CQI == 0 the UE is out of range, thus return 0
-    if (cqi == 0)
-    {
+    if (cqi == 0) {
         EV << NOW << " NRAmc::computeBitsPerRbBackground - CQI equal to zero, return no bytes available" << endl;
         return 0;
     }
@@ -258,34 +245,40 @@ unsigned int NRAmc::computeBitsPerRbBackground(Cqi cqi, const Direction dir, dou
     NRMCSelem mcsElem = getMcsElemPerCqi(cqi, dir);
     unsigned int numRe = getResourceElements(blocks, getSymbolsPerSlot(carrierFrequency, dir));
     unsigned int modFactor;
-    switch(mcsElem.mod_)
-    {
-        case _QPSK:   modFactor = 2; break;
-        case _16QAM:  modFactor = 4; break;
-        case _64QAM:  modFactor = 6; break;
-        case _256QAM: modFactor = 8; break;
-        default: throw cRuntimeError("NRAmc::computeCodewordTbs - unrecognized modulation.");
+    switch (mcsElem.mod_) {
+        case _QPSK:
+            modFactor = 2;
+            break;
+        case _16QAM:
+            modFactor = 4;
+            break;
+        case _64QAM:
+            modFactor = 6;
+            break;
+        case _256QAM:
+            modFactor = 8;
+            break;
+        default:
+            throw cRuntimeError("NRAmc::computeCodewordTbs - unrecognized modulation.");
     }
     double coderate = mcsElem.coderate_ / 1024;
     double nInfo = numRe * coderate * modFactor * layers;
 
-    unsigned int tbs = computeTbsFromNinfo(floor(nInfo),coderate);
+    unsigned int tbs = computeTbsFromNinfo(floor(nInfo), coderate);
 
     EV << NOW << " NRAmc::computeBitsPerRbBackground Available space: " << tbs << "\n";
 
     return tbs;
 }
 
-NRMCSelem NRAmc::getMcsElemPerCqi(Cqi cqi, const Direction dir)
-{
+NRMCSelem NRAmc::getMcsElemPerCqi(Cqi cqi, const Direction dir) {
     // CQI threshold table selection
-    NRMcsTable* mcsTable;
+    NRMcsTable *mcsTable;
     if (dir == DL)
         mcsTable = &dlNrMcsTable_;
     else if ((dir == UL) || (dir == D2D) || (dir == D2D_MULTI))
         mcsTable = &ulNrMcsTable_;
-    else
-    {
+    else {
         throw omnetpp::cRuntimeError("NRAmc::getIMcsPerCqi(): Unrecognized direction");
     }
     CQIelem entry = mcsTable->getCqiElem(cqi);
@@ -296,14 +289,12 @@ NRMCSelem NRAmc::getMcsElemPerCqi(Cqi cqi, const Direction dir)
     unsigned int min = mcsTable->getMinIndex(mod);
     unsigned int max = mcsTable->getMaxIndex(mod);
 
-
     // Initialize the working variables at the minimum value.
     NRMCSelem ret = mcsTable->at(min);
 
     // Search in the McsTable from min to max until the rate exceeds
     // the coderate in an entry of the table.
-    for (unsigned int i = min; i <= max; i++)
-    {
+    for (unsigned int i = min; i <= max; i++) {
         NRMCSelem elem = mcsTable->at(i);
         if (elem.coderate_ <= rate)
             ret = elem;

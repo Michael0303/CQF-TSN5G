@@ -51,7 +51,7 @@ path2 = Path(
 
 # Flows
 tt_flow1 = Flow(
-    period=4,  # 2, 4
+    period=4,  # 2, 4 ms
     payload=256,  # 50 ~ 1000
     priority=5,
     latency=4,  # 1, 2, 4
