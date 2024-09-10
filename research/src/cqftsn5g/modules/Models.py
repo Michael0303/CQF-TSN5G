@@ -14,10 +14,11 @@ class Link:
 
 
 class Path:
-    def __init__(self, src: Node, dst: Node, links: list[Link]):
+    def __init__(self, src: Node, dst: Node, links: list[Link], cqi: int):
         self.src = src
         self.dst = dst
         self.links = links
+        self.cqi = cqi
 
 
 class Flow:
@@ -27,7 +28,6 @@ class Flow:
         payload: int,  # bytes
         priority: int,
         latency: float,  # ms
-        CQI: int,
         jitter: float,  # ms
         bandwidth: float,  # MB/s
         flowType: str,  # "TT" or "AVB"
@@ -36,7 +36,6 @@ class Flow:
         self.period = period
         self.payload = payload
         self.priority = priority
-        self.CQI = CQI
         self.latency = latency
         self.jitter = jitter
         self.bandwidth = bandwidth

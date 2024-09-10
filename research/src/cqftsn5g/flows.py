@@ -34,6 +34,7 @@ path1 = Path(
         upf_nwtt_tsn_sw2,
         tsn_sw2_host3,
     ],
+    cqi=13,
 )
 path2 = Path(
     src=host2,
@@ -51,24 +52,24 @@ path2 = Path(
 
 # Flows
 tt_flow1 = Flow(
-    period=4,  # 2, 4 ms
+    period=4000,  # 2, 4 ms
     payload=256,  # 50 ~ 1000
     priority=5,
-    latency=4,  # 1, 2, 4
+    latency=4000,  # 1, 2, 4
     CQI=13,
-    jitter=0.5,
+    jitter=500,
     bandwidth=0,
     flowType="TT",
     path=path1,
 )
 avb_flow1 = Flow(
-    period=10,  # 4, 8
+    period=10000,  # 4, 8
     payload=1024,
     priority=3,
-    latency=10,
+    latency=10000,
     CQI=13,
-    jitter=10,
-    bandwidth=1,
+    jitter=5000,
+    bandwidth=80000,
     flowType="AVB",
     path=path2,
 )
@@ -77,9 +78,9 @@ avb_flow1 = Flow(
 # period(ms): 0.5, 1, 2, 2.5, 4, 5, 8, 10, 16 / 4, 8
 # payload(bytes): 50, 100, 125, 200, 250, 50~1000 / 800, 1000, 1200, 1500
 # Hyper_cycle: 10 ms
-# time_interval: 0.125, 0.5, 4 ms 0.0005
+# time_interval: 0.125, 0.5, 4 ms 0.0005  (25 microseconds)
 # Latency: (0.5, 1)(=period), 6 / 1.6~8(=0.4x~1x period), 20 ms
-# Jitter: 0-1 microsecond, 0.5 ms
+# Jitter: 0-1 microsecond, 0.5 ms (< 50 microseconds)
 # DataRate: 80000 bytes/sec = 640Kb/s, 1000~2000 Kb/s
 # 50 TT
 # 140 ~ 200 AVB
@@ -94,7 +95,7 @@ avb_flow1 = Flow(
 
 
 def flow_template():
-    flow_features = [
+    flow_features = [  # (latency, jitter, period) in microseconds
         {"latency": 2000, "jitter": 500, "period": 3200},
         {"latency": 2000, "jitter": 100, "period": 1600},
         {"latency": 2000, "jitter": 50, "period": 3200},

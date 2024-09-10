@@ -1,19 +1,23 @@
-OMNETPP_ROOT = /home/michael/omnetpp-6.0
-SIMU5G_ROOT = /home/michael/5GTQ/Simu5G
+all: checkmakefiles
+	@cd src && $(MAKE)
 
-INCLUDES = -I$(OMNETPP_ROOT)/include -I$(SIMU5G_ROOT)/src
-LDFLAGS = -L$(OMNETPP_ROOT)/lib -L$(SIMU5G_ROOT)/src
-LDLIBS = -lomnetpp -lsimu5g
+clean: checkmakefiles
+	@cd src && $(MAKE) clean
 
-CXXFLAGS = -v $(INCLUDES)
+cleanall: checkmakefiles
+	@cd src && $(MAKE) MODE=release clean
+	@cd src && $(MAKE) MODE=debug clean
+	@rm -f src/Makefile
 
-all: hello
+makefiles:
+	@cd src && opp_makemake -f --deep -o exe -O out -KINET_PROJ=$$(inet_root) -DINET_IMPORT -I. -I$$\(INET_PROJ\)/src -L$$\(INET_PROJ\)/src -lINET$$\(D\) -KSIMU5G_PROJ=$$SIMU5G_ROOT -DSIMU5G_IMPORT -I. -I$$\(SIMU5G_PROJ\)/src -L$$\(SIMU5G_PROJ\)/src -lsimu5g$$\(D\)
 
-hello: hello.o
-	$(CXX) -o $@ $< $(LDFLAGS) $(LDLIBS)
-
-hello.o: hello.cc
-	$(CXX) -c $(CXXFLAGS) $<
-
-clean:
-	rm -f hello.o hello
+checkmakefiles:
+	@if [ ! -f src/Makefile ]; then \
+	echo; \
+	echo '======================================================================='; \
+	echo 'src/Makefile does not exist. Please use "make makefiles" to generate it!'; \
+	echo '======================================================================='; \
+	echo; \
+	exit 1; \
+	fi
