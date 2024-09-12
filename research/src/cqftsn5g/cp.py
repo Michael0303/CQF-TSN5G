@@ -110,7 +110,7 @@ def cp_sat_scheduling(
         for link in l_5G:
             model.Add(
                 sum(
-                    req_rbs(flow.CQI, carrierInfo, flow.payload)
+                    req_rbs(flow.path.cqi, carrierInfo, flow.payload)
                     for i, flow in enumerate(flows)
                     if chi[i, link, k] == 1
                 )
