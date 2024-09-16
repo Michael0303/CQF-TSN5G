@@ -1,7 +1,7 @@
 import logging
-from modules.NRAmc import CarrierInfo, Direction, SlotFormat
-from modules.UserTxParams import TxMode, UserTxParams
-from calculate_rbs import req_rbs
+from cqftsn5g.modules.NRAmc import CarrierInfo, Direction, SlotFormat
+from cqftsn5g.modules.UserTxParams import TxMode, UserTxParams
+from cqftsn5g.calculate_rbs import req_rbs
 
 
 if __name__ == "__main__":

@@ -1,8 +1,11 @@
 from dataclasses import dataclass
+
+
 @dataclass
 class Node:
     name: str
     is_endpoint: bool
+
 
 @dataclass
 class Link:
@@ -12,33 +15,38 @@ class Link:
     linkType: str
 
     @property
-    def name(self):
+    def name(self) -> str:
         return self.point1.name + "-" + self.point2.name
+
+
 @dataclass
 class Path:
     src: Node
     dst: Node
     links: list[Link]
     cqi: int
+    direction: str
+
+    @property
+    def hops(self) -> int:
+        return len(self.links)
+
 
 @dataclass
 class Flow:
-    period: float  # us
+    id: str
+    period: int  # us
     payload: int  # bytes
     priority: int
-    latency: float  # us
-    jitter: float  # us
-    bandwidth: float  # MB/s
+    latency: int  # us
+    jitter: int  # us
+    bandwidth: float  # Mbps
     flowType: str  # "TT" or "AVB"
-    path: Path
+    path: str
 
-    @property
-    def hops(self):
-        return len(self.path.links)
 
 @dataclass
 class Network:
     nodes: list[Node]
     links: list[Link]
     flows: list[Flow]
-

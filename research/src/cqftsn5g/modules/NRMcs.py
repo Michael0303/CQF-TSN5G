@@ -233,7 +233,7 @@ class NRMcsTable:
             ]
 
     def get_cqi_elem(self, i):
-        print(f"CQI table index: {i}")
+        # print(f"CQI table index: {i}")
         return self.cqiTable[i]
 
     def get_min_index(self, mod):

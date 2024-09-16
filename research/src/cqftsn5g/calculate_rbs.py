@@ -2,8 +2,8 @@ import logging
 import math
 
 from cqftsn5g.modules.UserTxParams import TxMode
-from modules.UserTxParams import UserTxParams
-from modules.NRAmc import CarrierInfo, Direction, compute_bits_on_n_rbs
+from cqftsn5g.modules.UserTxParams import UserTxParams
+from cqftsn5g.modules.NRAmc import CarrierInfo, Direction, compute_bits_on_n_rbs
 
 
 def req_n_rbs(
@@ -31,8 +31,8 @@ def req_rbs(
     CQI: int,
     carrierInfo: CarrierInfo,
     payload: int,
+    dir: Direction,
     id: int = 0,
-    dir: Direction = Direction.DL,
     blocksPerBand: int = 1,
 ) -> int:
     userTxParams = UserTxParams(txMode=TxMode.TRANSMIT_DIVERSITY, ri=1, cqiVector=[CQI], pmi=0)

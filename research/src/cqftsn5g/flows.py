@@ -86,7 +86,7 @@ avb_flow1 = Flow(
 # 140 ~ 200 AVB
 
 # mu = 3 => TTI = 0.125 = 125 mus
-# mu = 2 => TTI = 0.5 = 500 mus
+# mu = 2 => TTI = 0.25 = 250 mus
 
 # mu = 4 => TTI = 0.0625=  62.5 mus
 # T_c = 0.5 ms => 8 TTI

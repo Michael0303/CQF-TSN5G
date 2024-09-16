@@ -1,9 +1,16 @@
 import math
 from enum import Enum
 import logging
-from modules.NRMcs import N_INFO_TO_TBS, TBSTABLESIZE, NRMcsTable, CQIelem, NRMCSelem, LteMod
+from cqftsn5g.modules.NRMcs import (
+    N_INFO_TO_TBS,
+    TBSTABLESIZE,
+    NRMcsTable,
+    CQIelem,
+    NRMCSelem,
+    LteMod,
+)
 
-from modules.UserTxParams import UserTxParams
+from cqftsn5g.modules.UserTxParams import UserTxParams
 
 
 class Direction(Enum):
