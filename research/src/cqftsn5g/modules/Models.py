@@ -50,3 +50,12 @@ class Network:
     nodes: list[Node]
     links: list[Link]
     flows: list[Flow]
+
+
+@dataclass
+class Flow_assignment:
+    flow: Flow
+    rb_usage: int
+    serve_time: list[int]
+    fiveG_link_serve_time: list[int]
+    direction: str
