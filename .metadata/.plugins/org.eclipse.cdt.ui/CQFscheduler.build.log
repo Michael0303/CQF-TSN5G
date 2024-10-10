@@ -1,0 +1,10 @@
+13:14:06 **** Incremental Build of configuration debug for project CQFscheduler ****
+make MODE=debug all 
+cd src && make all
+make[1]: Entering directory '/home/michael/5GTQ/CQFscheduler/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/michael/5GTQ/CQFscheduler/src'
+Creating executable: out/clang-debug//CQFscheduler_dbg
+
+13:14:06 Build Finished. 0 errors, 0 warnings. (took 523ms)
+
