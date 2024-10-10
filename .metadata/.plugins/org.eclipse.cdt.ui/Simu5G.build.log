@@ -1,8 +1,0 @@
-14:09:21 **** Incremental Build of configuration gcc-debug for project Simu5G ****
-make MODE=debug -j20 all 
-make[1]: Entering directory '/home/michael/5GTQ/Simu5G/src'
-make[1]: Nothing to be done for 'all'.
-make[1]: Leaving directory '/home/michael/5GTQ/Simu5G/src'
-
-14:09:21 Build Finished. 0 errors, 0 warnings. (took 373ms)
-
